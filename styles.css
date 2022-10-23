@@ -1,36 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    margin: 0;
     background-color: #77b2ae;
 }
 
-.header {
+#header {
     background-color: #52b2ac;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-bottom: 7px solid white;
+    position: fixed;
 }
 
-.logo {
+#logo {
     color: white;
     float: left;
     margin-top: 5px;
-    padding: 12px 12px;
+    padding: 11px;
     font-size: 25px;
     font-family: MoonGet;
 }
 
-.clickable {
+.link {
     width: 30px;
     height: auto;
-    padding: 5px;
+    padding: 11px;
     margin-right: 15px;
     margin-top: 5px;
     color: white;
     float: right;
 }
 
-.clickable:hover {
+.link:hover {
     background-color: #04615b;
     border-radius: 10px;
+}
+
+#select {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    display: none;
+    margin-top: 60px;
+}
+
+#select div {
+    display: inline;
+}
+
+#select a {
+    margin-right: 8%;
+    margin-left: 8%;
+    text-decoration: none;
+    line-height: 160%;
+    color: #04615b;
+    font-size: 170%;
+    font-weight: 600;
+    font-family: Comfortaa;
 }
 
 #me {
@@ -40,46 +69,102 @@ body {
     width: 50%;
 }
 
-#bg {
-    background-image: url(images/header-bg.png);
+#cover {
+    background-image: url(images/cover-bg.png);
     background-size: cover;
     width: 100%;
+    padding: 50px 0px 0px 0px;
     border-bottom: 10px solid white;
 }
 
-.pars {
-    margin-left: 3%;
-    color: white;
-    font-size: 120%;
-    font-family: Comfortaa;
+.box {
+    padding: 20px 40px;
+    margin-left: 5%;
+    width: 40%;
+    max-width: 60%;
+    border-radius: 32px 32px 32px 32px;
+    -moz-border-radius: 32px 32px 32px 32px;
+    -webkit-border-radius: 32px 32px 32px 32px;
+    background-color: #00000083;
 }
 
-.header-par {
+.box h1 {
     padding-top: 0%;
     margin-top: 2%;
     margin-left: 3%;
     color: white;
     font-size: 350%;
-    font-family: Lobster;
+    font-family: Caveat;
 }
 
-.section {
+.box p {
+    line-height: 180%;
+    margin-left: 3%;
+    color: white;
+    font-size: 130%;
+    font-family: Comfortaa;
+}
+
+.box a {
+    text-decoration: none;
+    color: #52b2ac;
+    font-weight: bold;
+}
+
+#section1 {
     background-image: url(images/kn.jpg);
     background-color: black;
     background-size: cover;
-    padding: 4.55% 0%;
+    padding: 8% 0%;
     width: 100%;
 }
 
-.box {
-    padding: 20px 20px;
-    margin-left: 5%;
-    width: 40%;
-    max-width: 750px;
-    border-radius: 32px 32px 32px 32px;
-    -moz-border-radius: 32px 32px 32px 32px;
-    -webkit-border-radius: 32px 32px 32px 32px;
-    background-color: #0458526c;
+#section2 {
+    background-image: url(images/pmg.jpg);
+    background-color: black;
+    background-size: cover;
+    padding: 17% 0%;
+    width: 100%;
+}
+
+#center-box {
+    margin-left: 27.5%;
+    text-align: center;
+}
+
+#section3 {
+    background-image: url(images/programming.jpg);
+    background-color: black;
+    background-size: cover;
+    padding: 7.5% 0%;
+    width: 100%;
+}
+
+#bottom-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 70%;
+    max-width: 70%;
+}
+
+#bottom-box p {
+    margin: 0%;
+}
+
+#certificates {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#certificates img {
+    width: 13%;
+    margin-left: 2%;
+    border-radius: 4%;
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 500px) {
@@ -94,9 +179,17 @@ body {
         text-align: center;
     }
 
-    .menu {
+    #menu {
         display: flex;
         justify-content: center;
+    }
+
+    #bg {
+        padding: 110px 0px 0px 0px;
+    }
+
+    #select {
+        margin: 0px;
     }
 }
 
@@ -111,6 +204,6 @@ body {
 }
 
 @font-face {
-    font-family: Lobster;
-    src: url(fonts/Lobster-Regular.ttf);
+    font-family: Caveat;
+    src: url(fonts/Caveat-VariableFont_wght.ttf);
 }
